@@ -9,7 +9,8 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 # gem "jekyll", "~> 3.8.5"
-gem 'github-pages'
+gem 'jekyll'
+gem 'jekyll-paginate'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem 'jekyll-theme-midnight', '~> 0.1.1'

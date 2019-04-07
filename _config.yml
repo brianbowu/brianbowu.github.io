@@ -1,77 +1,50 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Basic
 title: Brian's Blog | 布莱恩部落
-email: wubo9935@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  WITH THE CODE, CHANGE THE WORLD !
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://brianbowu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+subtitle: A blog-orientation theme for Jekyll
+# welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
+description: With the Code, Change the World !
+creator: <a href="https://brianbowu.github.io">@brianbowu</a>
 
-author:
-  name: 'Brian Wu'
-  email: wubo9935@gmail.com
-  twitter_username: BrianBoWu
-  facebook_username: brianbowu
-  github_username:  brianbowu
-  linkedin_username:  brianbowu
+url: "https://brianbowu.github.io"
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+permalink: /:year/:month/:title/
 
-# Build settings
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
+# Format
 highlighter: rouge
-#theme: jekyll-theme-midnight
 
-sass:
-    sass_dir: _sass
-    style: compressed
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: blue
 
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+# The blog button should not be removed.
+blog_button:
+    title: 博客
+    description: 访问博客
 
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo-tag
-#   - jekyll-sitemap
-#   - jekyll-paginate-v2
+# Navigation buttons in the front page.
+nav:
+    - {title: 简历, description: 我的简历, url: '#'}
+    - {title: 项目, description: 我参与的项目, url: '#'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
 
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+# Pagination
+plugins: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo: 
+    
+# Social
+social:
+    weibo: brianbowu
+    github: brianbowu
+    twitter: BrianBoWu
+    # gplus: 107108267983477358170
+    mail: wubo9935@gmail.com
+
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
